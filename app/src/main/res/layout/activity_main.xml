@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color2">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color5">
+
+        <ImageButton
+            android:id="@+id/buttonTransaksi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_order"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentRight="true"/>
+        <ImageButton
+            android:id="@+id/buttonMeja"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_table"
+            android:backgroundTint="@color/white"
+            android:layout_toLeftOf="@id/buttonTransaksi"
+            android:layout_marginRight="10dp"/>
+        <ImageButton
+            android:id="@+id/buttonUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_user"
+            android:backgroundTint="@color/white"
+            android:layout_toLeftOf="@id/buttonMeja"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Makanan"
+        android:fontFamily="@font/reikna"
+        android:textSize="50dp"
+        android:textColor="@color/color4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="80dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minuman"
+        android:textColor="@color/color4"
+        android:fontFamily="@font/reikna"
+        android:layout_marginLeft="16dp"
+        android:textSize="50dp"
+        android:layout_marginTop="430dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMinuman"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginTop="470dp"/>
+
+    <Button
+        android:id="@+id/checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_marginLeft="16dp" android:layout_marginRight="16dp"
+        android:backgroundTint="@color/color5"
+        android:text="checkout"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_add"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="17dp"
+        app:backgroundTint="@color/color5" />
+
+
+</RelativeLayout>

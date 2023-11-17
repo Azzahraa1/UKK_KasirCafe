@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    android:padding="30dp"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/colo3"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:fontFamily="@font/reikna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:text="Ubah Register"
+                android:textAlignment="center"
+                android:textColor="@color/color5"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_nama_regis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:textColor="@color/color5"
+                android:textColorHint="@color/color5"
+                android:fontFamily="@font/bevietnam"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edt_email_regis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="@color/color5"
+                android:textColorHint="@color/color5"
+                android:fontFamily="@font/bevietnam"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edt_pw_regis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="@color/color5"
+                android:fontFamily="@font/bevietnam"
+                android:textColorHint="@color/color5"
+                android:inputType="textPassword" />
+
+            <Spinner
+                android:id="@+id/spinerRole"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/color5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/roles" />
+            <Button
+                android:id="@+id/btn_regis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/color5"
+                android:text="Simpan" />
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:textColor="@color/color5"-->
+<!--                android:backgroundTint="@color/black"-->
+<!--                android:text="Already Have Account?"-->
+<!--                android:textAlignment="center" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_to_log"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/black"-->
+<!--                android:text="Login"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/color5"-->
+<!--                android:textStyle="bold" />-->
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

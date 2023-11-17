@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    tools:context=".Manager.ManagerActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color5">
+
+        <ImageButton
+            android:id="@+id/buttonTransaksi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_order"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentRight="true"/>
+        <ImageButton
+            android:id="@+id/buttonMeja"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_table"
+            android:backgroundTint="@color/white"
+            android:layout_toLeftOf="@id/buttonTransaksi"
+            android:layout_marginRight="10dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Favorit"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/reikna"
+            android:textColor="@color/white"
+            android:layout_marginLeft="16dp"/>
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/textFav"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/textPenj"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Penjualan Harian"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/reikna"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_below="@id/barChart"/>-->
+
+<!--            <com.github.mikephil.charting.charts.LineChart-->
+<!--                android:id="@+id/lineChart"-->
+<!--                android:layout_width="400dp"-->
+<!--                android:layout_height="500dp"-->
+<!--                android:layout_below="@id/textPenj"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_centerHorizontal="true"/>-->
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

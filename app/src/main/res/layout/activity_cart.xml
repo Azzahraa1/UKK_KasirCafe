@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    tools:context=".Transaksi.CartActivity">
+
+    <TextView
+        android:id="@+id/jdl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Pesanan"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/reikna"
+        android:textSize="40dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jdl"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_cart" />
+
+    <Button
+        android:id="@+id/checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/color5"
+        android:textColor="@color/white"
+        android:text="checkout ()"/>
+
+</RelativeLayout>

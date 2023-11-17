@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "614401661072",
+    "project_id": "ukk-kasircafe",
+    "storage_bucket": "ukk-kasircafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614401661072:android:4f3a34683fc0a49e5da015",
+        "android_client_info": {
+          "package_name": "com.example.ukk_kasircafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614401661072-1m9c776fg97rlnr47g0007s34oheek1r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ukk_kasircafe",
+            "certificate_hash": "8b9eee291d28d92020f3fc73b31a636c4cc72be2"
+          }
+        },
+        {
+          "client_id": "614401661072-e63n506qbt4rktcvt4l7ibo9ofpgs1pq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvs_gv8NcjsztT01r7iEHwo9s3tQCzrtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614401661072-e63n506qbt4rktcvt4l7ibo9ofpgs1pq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

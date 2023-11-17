@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color2"
+    android:layout_height="match_parent"
+    tools:context=".Transaksi.CheckOutActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Nama Pelanggan"
+        android:fontFamily="@font/bevietnam"
+        android:textColor="@color/color5"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/namaPelanggan"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/bevietnam"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Nomor Meja"
+        android:fontFamily="@font/bevietnam"
+        android:textColor="@color/color5"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/nomorMeja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Meja 1"
+        android:fontFamily="@font/bevietnam"
+        android:textSize="20sp"
+        android:textColor="@color/color5"
+        android:textStyle="bold"/>
+
+
+    <CheckBox
+        android:id="@+id/dibayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/color5"
+        android:layout_marginLeft="16dp"
+        android:text="Dibayar"
+        android:fontFamily="@font/bevietnam"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nominal Pembayaran"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/bevietnam"/>
+
+    <EditText
+        android:id="@+id/nominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevietnam"
+        android:layout_marginLeft="16dp"
+        android:inputType="number"
+        android:layout_marginRight="16dp"/>
+    <Button
+        android:id="@+id/checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/color5"
+        android:text="checkout"/>
+
+</LinearLayout>

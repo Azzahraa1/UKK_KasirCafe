@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color2"
+    android:layout_height="match_parent"
+    tools:context=".Manager.ManagerMeja">
+
+    <TextView
+        android:id="@+id/jdl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Meja"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/reikna"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jdl"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
